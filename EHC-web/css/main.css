@@ -1,0 +1,1106 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+	vertical-align:baseline;
+	font-weight:inherit;
+	font-family:inherit;
+	font-style:inherit;
+	font-size:100%;
+	border:0 none;
+	outline:0;
+	padding:0;
+	margin:0;	
+}
+
+html, body {
+	height:100%;
+}
+
+
+body {
+	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	font-size: 13px;
+	
+	background: #efefef;
+}
+
+body {
+	background:#ffffff url(../img/egg_shell.png) repeat left top;
+}
+
+#siteBody { /*This is outerWrapper*/
+	width:auto;
+	height:100%;
+	margin:0 0px -100px 0px; 
+	min-height:100%;
+	height:auto !important;
+}
+
+
+#noOverlap {
+	width : 100%;
+	height:100px; /*Must be equal to height of footeer + footer border*/
+	clear:both;
+}
+
+/*________________________________________________Scroll bar_______________________________________________*/
+::-webkit-scrollbar {
+    width: 0.6%;
+}
+::-webkit-scrollbar-track {
+	background-color:#eee;
+	-webkit-box-shadow:inset 0 0 3px 1px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-track:hover {
+	background-color:#eee;
+	-webkit-box-shadow:inset 0 0 3px 1px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow:inset 0 0 6px 1px rgba(255,255,255,0.3);
+	background-color:rgba(2,2,2,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow:inset 0 0 6px 1px rgba(255,255,255,0.3);
+	background-color:rgba(2,2,2,0.5);}
+
+
+
+/*--------------------------------------------------------------------MAIN HEADER-------------------------------------------------*/
+
+#siteHeader {
+	width:100%;
+	height: 100px;
+	clear:both;
+}
+
+#siteLogo {
+	width:;	
+}
+
+/*_____________LOGIN_______________*/
+#siteLogin {
+	position:fixed;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	display:none;
+	background-color:rgba(27,28,28,0.7);
+	z-index:100;
+}
+
+#LoginMenu {
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:-10% 0 0 -10%;/*Half of width*/
+	background:;  /*Transparent*/
+	display: none;
+	width: 20%;
+	z-index:110;
+}
+
+#bar {
+	background: #eee;
+	box-shadow: 0 0 5px #000;
+	-mox-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	height:;
+	width:;
+	position:absolute;
+	top:0;
+	right:0;
+
+}
+
+#bar a {
+	text-decoration: none;
+	color: #2e2e2e;
+	box-shadow:1px 1px 2px #000 inset;
+	-webkit-box-shadow:1px 1px 2px #000 inset;
+
+}
+
+#bar a:hover {
+	text-shadow:0 1px 1px #999;
+}
+#bar:active {
+	-webkit-box-shadow: 0 0 2px #000;
+}
+
+#bar h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: bold;
+	letter-spacing: 4px;
+	margin: 0;
+	padding:11px 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#bar h1#hiUser {
+	display:none;
+}
+#bar h1#logInOut{
+	
+}
+
+/*LOGIN FORM*/
+#LoginMenu form {
+	color:#4c4c4c;
+	font-size:14px;
+	text-shadow:0 -1px 0 #000;
+	width:100%;
+}
+
+#LoginMenu input {
+	display:block;
+	background-color:#272828;
+	border:1px solid #181818;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	color:#585858;
+	font-family:Helvetica, Arial, sans-serif;
+	height:35px;
+	margin:10px 5%;
+	text-indent:7px;
+	text-shadow:0 1px 0 #000;
+	width:90%;
+}
+
+#LoginMenu input:focus {
+	outline:none;
+	background-color:#fafafa;
+	color:black;
+	text-shadow:none;
+	-webkit-box-shadow: 0 0 5px #3eabff, inset 0 1px 1px #000;
+	-webkit-transition:background-color .5s ease-in;
+	-moz-transition:color 2s ease-in;
+	-o-transition:color .3s ease-in;
+	transition:color .3s ease-in;
+}
+
+#LoginMenu #loginButton a {
+	margin: 10px 0 10px 20px;
+	width:200px;
+}
+
+#LoginMenu div#loginButton  {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#LoginMenu #loginButton .button {
+	display: inline-block;
+	position: relative;
+	color: #888;
+	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 12px;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: helvetica, arial, sans-serif;
+	border-radius: 4px;
+	border: 1px solid #bcbcbc;
+
+	box-shadow: 0 3px 6px rgba(255,255,255,0.5);
+	-webkit-box-shadow: 0 3px 6px rgba(255,255,255,0.5);
+	
+
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+}
+
+#LoginMenu #loginButton .button:hover {
+	color: #555;
+}
+
+#LoginMenu #loginButton .button:active,#LoginMenu .button:active:after,#LoginMenu .button:active:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+#LoginMenu #loginButton .button.next:after {
+	content: '';
+	position: absolute;
+	height: 48%;
+	width: 15px;
+	border-right: 1px solid #bcbcbc;
+
+	background-image: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	right: -5px;
+	bottom: 1px;
+
+	-webkit-transform: skew(-35deg, 0);
+	-moz-transform: skew(-35deg, 0);
+	-o-transform: skew(-35deg, 0);
+	-ms-transform: skew(-35deg, 0);
+	transform: skew(-35deg, 0);
+
+	-webkit-box-shadow: 2px 1px 2px rgba(100,100,100,0.1);
+	box-shadow: 2px 1px 2px rgba(100,100,100,0.1);
+}
+
+#LoginMenu #loginButton .button.next:before {
+	content: '';
+	position: absolute;
+
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	height: 50%;
+	width: 15px;
+	border-right: 1px solid #bcbcbc;
+	top: 1px;
+	right: -5px;
+
+	-webkit-transform: skew(35deg, 0);
+	-moz-transform: skew(35deg, 0);
+	-o-transform: skew(35deg, 0);
+	-ms-transform: skew(35deg, 0);
+	transform: skew(35deg, 0);
+}
+
+/*--------------------------------------------------------------------MAIN NAVIGATION-------------------------------------------------*/
+#siteNav  {
+	height:auto;
+	width:90%;
+	margin: 0px 5% 0px 5%;
+	background: #252525;
+	border: 1px solid #efefef;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow:hidden;
+}
+#siteNav ul {
+	padding:0 0;
+	height:auto;
+	width:72%;
+	padding: 0px 8% 0px 0%;
+	margin:0;
+	background: #069;
+	clear:both;
+	
+}
+
+#siteNav li {
+	background: #252525;
+	float: left;
+	height: 60px;
+	width:11%;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#siteNav li:hover {
+	background: #424242;
+}
+
+#siteNav a {
+	display: block;
+	padding: 15px 0;
+	text-align:center;
+	color: white;
+	text-decoration: none;
+    position: relative;
+    top: 0;
+    line-height: 30px;
+    display: block;
+	
+	-webkit-transition: margin 0.3s linear, top 0s 0.2s linear;
+	-moz-transition: margin 0.3s linear, top 0s 0.2s linear;
+	-ms-transition: margin 0.3s linear, top 0s 0.2s linear;
+	-o-transition: margin 0.3s linear, top 0s 0.2s linear;
+	transition: margin 0.3s linear, top 0s 0.2s linear;
+}
+
+#siteNav li:hover a {
+	margin-top: 60px;
+	top: -60px;
+}
+
+
+/*_____SEARCH____________*/
+#siteSearch {
+	width:20%;
+	margin:0;	
+	float:right;
+    color: #fff;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 1px rgba(0,150,200,.5);
+    line-height: 1.5;
+}
+
+#siteSearch .container {
+	width: 180px;
+	margin: 0 auto;
+}
+
+#siteSearch #search {
+    -webkit-appearance: none;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    width: 4px;
+    padding: 0 10px;
+    height: 24px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    border: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,150,200,.5), inset 0 2px 5px rgba(0,100,150,.3), 0 2px 0 rgba(255,255,255,.6);
+    -moz-box-shadow: 0 0 0 1px rgba(0,150,200,.5), inset 0 2px 5px rgba(0,100,150,.3), 0 2px 0 rgba(255,255,255,.6);
+    box-shadow: 0 0 0 1px rgba(0,150,200,.5), inset 0 2px 5px rgba(0,100,150,.3), 0 2px 0 rgba(255,255,255,.6);
+    position: relative;
+    z-index: 5;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+#siteSearch #search:focus {
+    outline: none;
+    width: 180px;
+}
+
+#siteSearch p.s {
+    z-index: 4;
+    position: relative;
+    padding: 5px;
+    line-height: 0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #b9ecfe;
+    background-image: -webkit-linear-gradient(#dbf6ff,#b9ecfe);
+    background-image: -moz-linear-gradient(#dbf6ff,#b9ecfe);
+    background-image: -ms-linear-gradient(#dbf6ff,#b9ecfe);
+    background-image: -o-linear-gradient(#dbf6ff,#b9ecfe);
+    background-image: linear-gradient(#dbf6ff,#b9ecfe);
+    display: inline-block;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 2px 5px rgba(0,100,150,.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 2px 5px rgba(0,100,150,.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 2px 5px rgba(0,100,150,.4);
+}
+
+#siteSearch p.s:hover {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 2px 3px 2px rgba(100,200,255,.5);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 2px 3px 2px rgba(100,200,255,.5);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 2px 3px 2px rgba(100,200,255,.5);
+}
+
+#siteSearch p.s:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #b9ecfe;
+    bottom: -10px;
+    right: -3px;
+    border-radius: 0 0 5px 5px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-shadow: inset 0 -1px 0 rgbA(255,255,255,.6), -2px 2px 2px rgba(0,100,150,.4);
+    -moz-box-shadow: inset 0 -1px 0 rgbA(255,255,255,.6), -2px 2px 2px rgba(0,100,150,.4);
+    box-shadow: inset 0 -1px 0 rgbA(255,255,255,.6), -2px 2px 2px rgba(0,100,150,.4);
+}
+
+#siteSearch p.s:hover:after {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,.6), -2px 2px 2px 1px rgba(100,200,255,.5);
+    -moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,.6), -2px 2px 2px 1px rgba(100,200,255,.5);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,.6), -2px 2px 2px 1px rgba(100,200,255,.5);
+}
+
+
+
+/*--------------------------------------------------------------------MAIN BODY-------------------------------------------------*/
+#contentWrapper{
+	width:100%;
+	overflow:auto;	
+}
+
+/*--------------------------------------------------------------------MAIN FOOTER-------------------------------------------------*/
+#siteFooter {
+	height:100px-2px; /*Subtracting the border height so If less content then no scroll bar would appear*/
+	min-height:98px;  /*Subtracting the border height so If less content then no scroll bar would appear,,,,,, Here math doesnot work*/
+
+	display:block;
+	width:100%;
+	margin:0 auto;
+	border-top:2px dashed #00FF00;
+	background:#000 url(../img/classy_fabric.png) repeat left top;
+	overflow:hidden;
+	clear:both;
+}
+
+#daiictFooter{
+	float:left;	
+}
+#daiictFooter h1 {
+	font-size:20px;
+	margin: 20px 0 0 30px;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #333;
+	opacity: 0.8;
+	letter-spacing:1px;	
+}
+#daiictFooter a {
+	text-decoration:none;	
+}
+#ehcFooter {
+	float:left;
+	width:600px;
+}
+#ehcFooter h1 {
+	font-size:30px;
+	margin: 10px 0 0 50px;
+	text-align:center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #333;
+	opacity: 0.8;
+	letter-spacing:2px;	
+}
+#ehcFooter h3{
+	font-size:15px;
+	margin: 5px 0 0 50px;
+	text-align:center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #333;
+	opacity: 0.8;
+	letter-spacing:2px;		
+}
+#ehcFooter a {
+	text-decoration:none;	
+}
+/*______SHARE__________*/
+#shareUs{
+	width:200px;
+	float:right;
+	overflow:hidden;
+}
+#shareUs .share-wrapper, 
+#shareUs .share-action {
+  width: 32px;
+  height: 32px;
+}
+
+#shareUs .share-wrapper {
+  font: 14px, 'FontAwesome';
+  position: relative;
+  text-align: center; 
+}
+
+#shareUs .share-container {
+  margin-left: 0px;
+  margin-top:  0px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(.05,.93,.61,1.6);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+  width: 0px;
+  height: 0px;
+  background: #fff;
+}
+
+#shareUs .share-action:hover ~ .share-container,
+#shareUs .share-container:hover {
+  width: 100px;
+  height: 100px;
+  overflow: visible;
+}
+
+#shareUs .share-container:after,
+#shareUs .share-container:before {
+  position: absolute;
+  background:  linear-gradient(rgba(136, 221, 255, 0.5) 0%, rgba(34, 153, 221, 0.5) 50%, rgba(136, 221, 255, 0.5) 100%);
+  background:  -webkit-linear-gradient(top, rgba(136, 221, 255, 0.5) 0%, rgba(34, 153, 221, 0.5) 50%, rgba(136, 221, 255, 0.5) 100%); 
+  z-index:4;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  content: '';
+}
+
+#shareUs .share-container:before {
+  background:  linear-gradient(left, rgba(136, 221, 255, 0.5) 0%, rgba(34, 153, 221, 0.5) 50%, rgba(136, 221, 255, 0.5) 100%);
+    background:  -webkit-linear-gradient(left, rgba(136, 221, 255, 0.5) 0%, rgba(34, 153, 221, 0.5) 50%, rgba(136, 221, 255, 0.5) 100%);
+  height: 1px;
+  margin: 50% 50%;
+  width: 0%;
+}
+
+#shareUs .share-action:hover ~ .share-container:before,
+#shareUs .share-container:hover:before {
+  width: 85%;
+  left: 0px;
+  margin: 50% 7%;
+}
+
+
+#shareUs .share-container:after {
+  left: -1px;
+  height: 0%;
+  width: 1px;
+  margin: 50% 50%;
+}
+
+#shareUs .share-action:hover ~ .share-container:after,
+#shareUs .share-container:hover:after {
+  height: 85%;
+  margin: 7% 50%;
+}
+
+#shareUs .share-action {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 5;
+  position: relative;
+  background: linear-gradient(#8df 0%, #29d 100%);
+  background: -webkit-linear-gradient(top, #8df 0%, #29d 100%);
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.5) inset, 0 0 0px 1px rgba(33, 112, 178, 0.5);
+  line-height: 33px;
+  color: #fff;
+}
+
+#shareUs .share-btn {
+  display:inline-block;
+  width: 49%;
+  height: 49%;
+  position: absolute;
+  z-indez:1;
+  border-color: #92888f;
+  border-style: solid;
+  border-width: 0;
+  font-size: 0px;
+  color: #777777;
+  overflow: hidden;
+}
+
+#shareUs .share-action:hover ~ .share-container .share-btn ,
+#shareUs .share-container:hover .share-btn  {
+  overflow: visible;
+  font-size: 25px;
+}
+
+#shareUs .share-btn:hover {
+  background:linear-gradient(#8df 0%, #29d 100%);
+  background: -webkit-linear-gradient(top, #8df 0%, #29d 100%);
+  color: #ffffff;
+  text-shadow: 0 -1px #4298e0;
+}
+
+#shareUs .share-btn.tl {
+  right: 50%;
+  bottom: 50%;
+  
+}
+#shareUs .share-btn.tr {
+  left: 50%;
+  bottom: 50%;
+  
+}
+#shareUs .share-btn.br {
+  left: 50%;
+  top: 50%;
+  
+}
+#shareUs .share-btn.bl {
+  right: 50%;
+  top: 50%;
+  
+}
+
+#shareUs .share-btn {
+  line-height: 50px;
+}
+
+#shareUs .rc10 {
+  border-radius: 10%;
+}
+#shareUs .below .share-btn.tl,
+#shareUs .rc10 .share-btn.tl {
+  line-height: 50px;
+}
+#shareUs .below .share-btn.tr,
+#shareUs .rc10 .share-btn.tr {
+  line-height: 45px;
+  text-indent: 3px;
+}
+
+#shareUs .below .share-btn.br,
+#shareUs .rc10 .share-btn.br {
+  line-height: 50px;
+}
+
+#shareUs .below .share-btn.bl,
+#shareUs .rc10 .share-btn.bl {
+  text-indent: -2px;
+  line-height: 55px;
+}
+#shareUs .rc10 .share-btn.tl {
+  border-top-left-radius: 20%;
+}
+#shareUs .rc10 .share-btn.tr {
+  border-top-right-radius: 20%;
+}
+
+#shareUs .rc10 .share-btn.br {
+  border-bottom-right-radius: 20%;
+}
+
+#shareUs .rc10 .share-btn.bl {
+  border-bottom-left-radius: 20%;
+}
+
+/** positions **/
+
+#shareUs .below.share-wrapper {
+  margin: 25% auto;
+  top: -16px;
+}
+#shareUs .below .share-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#shareUs .below .share-container,
+#shareUs .top .share-container,
+#shareUs .right .share-container,
+#shareUs .bottom .share-container {
+  top : 0%;
+  left: 50%;
+}
+#shareUs .below .share-action:hover ~ .share-container,
+#shareUs .below .share-container:hover {
+  top: -100%;
+  left: -100%;
+}
+@font-face{
+    font-family:FontAwesome;
+    src:url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.eot?#iefix) format('eot'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.woff) format('woff'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.ttf) format('truetype'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.svg#FontAwesome) format('svg');
+    font-weight:400;font-style:normal;}
+
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+#shareUs [class^="icon-"]:before,#shareUs  [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#shareUs a [class^="icon-"],#shareUs a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+#shareUs .icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+#shareUs .btn [class^="icon-"],#shareUs .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+#shareUs li [class^="icon-"],#shareUs li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+#shareUs li .icon-large[class^="icon-"],#shareUs li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+#shareUs li[class^="icon-"],#shareUs li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+#shareUs li[class^="icon-"]:before,#shareUs li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+#shareUs li[class^="icon-"].icon-large:before,#shareUs li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+#shareUs .icon-facebook:before             { content: "\f09a"; }
+#shareUs .icon-twitter:before              { content: "\f099"; }
+#shareUs .icon-pinterest:before            { content: "\f0d2"; }
+#shareUs .icon-google-plus:before          { content: "\f0d5"; }
+
+#shareUs .icon-share:before                { content: "\f045"; }
+
+/* global */
+#shareUs a {
+  text-decoration: none;
+}
+
+#shareUs .container {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#shareUs .cell {
+  float: left;
+  width: 200px;
+  height: 98px;
+  position: relative;
+}
+
+
+#shareUs .debug .share-container {
+  width: 100px;
+  height: 100px;
+}
+
+
+/*Go Top*/
+#goTop{
+	float:right;
+	width:30px;
+	padding:25px 30px 25px 30px;
+}
+
+#goTop span{
+	-webkit-transform: scaleX(2.5);
+	-moz-transform: scaleX(2.5);
+	
+	transform: scaleX(2.5);
+	display: inline-block;
+	color: #BADA55;
+	text-shadow: 
+	0 2px 2px rgba(255,255,255,0.7), 
+	0 10px 4px rgba(0,0,0,0.9);
+	font-size: 32px;
+}
+#goTop span:hover {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-webkit-transform: scaleX(2.5) translateY(4px);
+	-moz-transform: scaleX(2.5) translateY(4px);
+	
+	transition: all 0.2s ease;
+	transform: scaleX(2.5) translateY(4px);
+	text-shadow:     
+	0 1px 1px rgba(0,0,0,0.9);
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

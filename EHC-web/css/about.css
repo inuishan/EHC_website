@@ -1,0 +1,33 @@
+#contentWrapper {
+	width:90%;
+	margin:0 5%;
+	position:relative;
+}
+
+#contentWrapper #background {
+	width:100%;
+	height:700px;
+	min-height:500px;
+	margin:10px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(0,0,0,0.3) url(../img/outlets.png) repeat right top;
+	filter: alpha(opacity=30);  
+    -moz-opacity: 0.3;  
+    -khtml-opacity: 0.3;  
+    opacity: 0.8; 
+}
+
+#contentWrapper #content {
+	position:absolute;
+	top:40px;
+	left:5%;
+	width:90%;
+	font-size:19px;
+	line-height:28px;
+	vertical-align:baseline;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#cfcfcf;
+	text-shadow:0 0 3px #000;
+}

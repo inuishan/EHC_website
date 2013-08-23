@@ -1,0 +1,19 @@
+383b98f add moddularity to event.js and improved overall code and relatoin betwwen the code, add replaceState for initialize of the page, two history problem is solved, problem still : article id is alerting two times
+0d89d50 Done comingEvents on home.html auto url linking to events.html BUT one extra history state is added
+d92a9af Done auto scrolling events using url
+a88e03b Added Each article ID ,history management and url management to events
+4a52aaa automating coming events is done, remainig automaitng urls
+d0c4e68 Done automating recent blogs
+b72e64b Events automation done with before registration login constraint, started automating recent blogs
+2ad331a Done login(login, logout, interface on the screen, show username, setting cookies) , added basic auto events php and js
+1af546c added basic structure of php, login, and blog.home
+d876226 Contact Page is added, and basic is done. Main content of event page is done with css (JS remaining)
+c9df93e Events page is added and sidebar of events is done
+389de5f About page added and done
+de26653 Basic Structure of Home is done. Added Recent blog Section
+5f98de8 Added home page, and in home page ComingEvents bar is complete
+2fa16f4 Template - Login, Search ,Navbar - Done
+ca979b1 add search bar, login toolbar, go to top, share us
+83d1180 Navigation bar added to template
+6e4ae8e Boilerplate template added
+7441191 Initialized the repo

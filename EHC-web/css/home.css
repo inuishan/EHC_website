@@ -1,0 +1,233 @@
+#contentWrapper {
+	width:90%;
+	margin:0 5%;
+	clear:both;
+	overflow:auto;
+}
+/*__________________________________________COMING EVENTS_________________________________________*/
+@import: url(http://fonts.googleapis.com/css?family=Enriqueta:700);
+#contentWrapper #comingEvents{
+	width:25%;
+	float:left;
+	color: #fff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+	margin:10px auto;
+}
+
+#comingEvents ul {
+    list-style: none;
+    width: 84%;
+	min-height:500px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.15);
+    padding:4% 8%;
+    /*border-radius*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#comingEvents h1 {
+	font-size: 20px;
+	color: #484848;
+	text-shadow: 0.5px 0.5px 0px #707070, 2px 2px 0px #eee;
+	background: rgba(255,255,255,0.25);
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 0 0 15px 0;
+	text-align:center;
+	font-weight:300;
+}
+
+#comingEvents h2 {
+	font-size: 18px;
+	color: #484848;
+	text-shadow: 0px 0.5px 0.5px rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.2);
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 0px 0;
+}
+
+#comingEvents h2 a{
+	text-decoration:none;
+	color: #484848;
+}
+
+#comingEvents h2 a:hover{
+	text-decoration:none;
+	color: #484848;
+	text-shadow:0 0 1px #000;
+}
+
+
+#comingEvents ul li span.bullet {
+    border-color: transparent transparent transparent #587b83;
+    border-style: dotted;
+    /* 'dotted' or 'dashed' is better than'solid' for triangles, try to change 'dotted' -> 'solid' see the ugliest triangle ever !*/
+    border-width: 5px;
+    display: inline-block;
+    height: 0;
+    width: 0;
+	margin-left: 10px;
+	margin-top: -5px;
+	
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#comingEvents ul li{
+	overflow:hidden;
+	margin:5px 0;
+}
+#comingEvents ul li div.eventBody{
+	opacity: 0;	
+	height:0;
+	-webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+
+}
+#comingEvents ul li div.clear {
+    height: auto;
+    margin:5px 0 5px 8px;
+	color : #000;
+	clear:both;
+	overflow:auto;
+	font-size: 12px;
+}
+
+#comingEvents ul li div.label {
+	float:left;
+	width:40px;
+	margin:0 0 0 15px;
+	color: #111;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+	font-weight:bold;
+}
+#comingEvents ul li div.colon {
+	float:left;
+	width:10px;
+	text-align:center;
+	color: #00F;
+	font-weight:bolder;
+}
+#comingEvents ul li div.field {
+	float:left;
+	margin:0 0 0 10px;
+	width:150px;
+	font-family: Verdana, Geneva, sans-serifx;
+	color: #000;
+}
+#comingEvents ul li:hover div.eventBody {
+    opacity: 1;
+    height:auto;
+}
+
+#comingEvents ul li.dropdown:hover span.bullet {
+    /*transform*/
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/*_________________________________________________________RECENT BLOG_______________________________________________*/
+#contentWrapper #recentBlog {
+	width:75%;
+	float:left;
+}
+
+#recentBlog article.blogPost{
+	margin: 10px 30px 30px 30px;
+}
+
+.blogPost header {
+	
+}
+
+.blogPost header h1{
+	text-align:center;
+	margin:10px auto 0 auto;
+	
+	font-size: 24px;
+	color: #587b83;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+
+}
+
+.blogPost header hr {
+    border: 0;
+    height: 2px;
+	margin:0 auto;
+	width:50%;
+    background: -moz-linear-gradient(left, rgba(50,50,50,0) 0%, rgba(50,50,50,0) 15%, rgba(50,50,50,0.65) 50%, rgba(50,50,50,0) 85%, rgba(50,50,50,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(50,50,50,0)), color-stop(15%,rgba(50,50,50,0)), color-stop(50%,rgba(50,50,50,0.65)), color-stop(85%,rgba(50,50,50,0)), color-stop(100%,rgba(50,50,50,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* IE10+ */
+	background: linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.blogPost section {
+	margin:5px 50px 10px 50px;
+}
+
+.blogPost section div.clear{
+	clear:both;
+	overflow:auto;
+	margin:5px 0;
+}
+
+.blogPost section div.blogPostMeta{
+	text-align:right;
+	margin:0 0 20px 0;
+	font-size:12px;
+}
+
+.blogPost section div.blogPostMeta span.author{
+	color:#090;
+}
+
+.blogPost section div.blogPostMeta span.writtenDate{
+	
+}
+.blogPost section div.blogPostContent{
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size:19px;
+	line-height:29.75px;
+	vertical-align:baseline;
+	font-weight:normal;
+	margin:0 0 40px 0;
+}
+
+.blogPost section div.blogPostContent{
+}
+
+.blogPost section hr {
+    border: none;
+    height: 1px; /* Linien-Stärke */
+    /*border-top: 1px solid #BBB; /* Linien-Stärke und Linien-Farbe  */
+    width: 80%; /* Linien-Breite */ 
+    padding: 0 0 12px; /* Schatten-Höhe */
+    overflow: hidden;
+    display: block;
+}
+
+.blogPost section hr:before {
+    content: '';
+    width: 90%; /* Schatten - Breite */
+    height: 20px;
+    box-shadow: 0 0 12px #333; /* Schatten Blur */
+    border-bottom-left-radius: 180px 10px;
+    border-bottom-right-radius: 180px 10px;
+    position: relative;
+    top: -20px;
+    left: 10%;
+    display: block;
+}

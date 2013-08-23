@@ -1,0 +1,230 @@
+#contentWrapper {
+	width:90%;
+	height:;
+	margin:10px 5%;
+	clear:both;
+	overflow:hidden;
+	background-color:;	
+}
+
+#contentWrapper #eventPeriod {
+	width:15%;
+	float:left;	
+}
+#eventPeriod ul {
+    list-style: none;
+    width: 92%;
+	min-height:500px;
+    margin: 0 auto;
+    background: rgba(100,100,100,0.2);
+    padding:4% 0% 4% 8%;
+    /*border-radius*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#eventPeriod ul li{
+	overflow:hidden;
+}
+#eventPeriod h2 {
+	font-size: 18px;
+	color: #587b83;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+	border-radius: 5px;
+	padding: 5px 0;
+	margin: 0 0 0 15%;
+	cursor:pointer;
+	
+}
+
+#eventPeriod ul li span.bullet {
+    border-color: transparent transparent transparent #587b83;
+    border-style: dotted;
+    /* 'dotted' or 'dashed' is better than'solid' for triangles, try to change 'dotted' -> 'solid' see the ugliest triangle ever !*/
+    border-width: 5px;
+    display: inline-block;
+    height: 0;
+    width: 0;
+	margin-left: 10px;
+	margin-top: -5px;
+	
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#eventPeriod ul li span.year {
+	background-color:#ccc;
+	width:20px;
+	height:20px;
+}
+
+#eventPeriod ul li div {
+	height: 0;
+    opacity: 0;
+	line-height:30px;
+    margin:0 0 0 20%;
+	padding:0 0 0 10%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	
+	font-size: 14px;
+	color: #111;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+	
+	cursor:pointer;
+}
+
+#eventPeriod ul li div.simpleShow {
+    height: 30px;
+    opacity: 1;
+}
+
+
+#eventPeriod ul li div.clickShow {
+	background-image:url(../img/egg_shell.png);
+	background-repeat:repeat;
+}
+
+#eventPeriod ul li.dropdown.clickBullet span.bullet {
+    /*transform*/
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+/*__________________________________________________________MAIN CONTENT________________________________________*/
+
+#contentWrapper #events {
+	width:82%;
+	float:left;
+}
+
+#events article.event{
+	margin: 10px 30px 30px 30px;
+}
+
+.event header {
+	
+}
+
+.event header h1{
+	text-align:center;
+	margin:10px auto 0 auto;
+	
+	font-size: 24px;
+	color: #587b83;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+
+}
+
+.event header hr {
+    border: 0;
+    height: 2px;
+	margin:0 auto;
+	width:50%;
+    background: -moz-linear-gradient(left, rgba(50,50,50,0) 0%, rgba(50,50,50,0) 15%, rgba(50,50,50,0.65) 50%, rgba(50,50,50,0) 85%, rgba(50,50,50,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(50,50,50,0)), color-stop(15%,rgba(50,50,50,0)), color-stop(50%,rgba(50,50,50,0.65)), color-stop(85%,rgba(50,50,50,0)), color-stop(100%,rgba(50,50,50,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* IE10+ */
+	background: linear-gradient(left, rgba(50,50,50,0) 0%,rgba(50,50,50,0) 15%,rgba(50,50,50,0.65) 50%,rgba(50,50,50,0) 85%,rgba(50,50,50,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.event section {
+	margin:10px 50px;
+}
+
+.event section div.clear{
+	clear:both;
+	overflow:auto;
+	margin:5px 0;
+}
+
+.event section div.label{
+	float:left;
+	width:120px;
+	margin:0 0 0 5px;
+	
+	font-size: 14px;
+	color: #111;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+	font-weight:bold;
+}
+
+.event section div.colon{
+	float:left;
+	width:30px;
+	text-align:center;
+	
+	font-size: 14px;
+	color: #00C;
+	font-weight:bolder;
+}
+
+.event section div.field{
+	float:left;
+	margin:0 0 0 10px;
+	
+	font-family: Verdana, Geneva, sans-serifx;
+	font-size: 14px;
+	color: #903;
+	font-weight:300;
+}
+
+.event section div.field a{
+	text-decoration:none;
+	font-family: Verdana, Geneva, sans-serifx;
+	font-size: 14px;
+	color: #993;
+	font-weight:300;
+	font-style:oblique;
+}
+
+.event section div.field a:hover{
+	text-shadow:0px 1px 0px rgb(5,5,5);
+}
+.event section div.description{
+	float:left;
+	display:inline-block;
+	margin:0 0 0 10px;	
+	width:500px;
+	
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height:20px;
+	color: #903;
+	font-weight:300;
+}
+
+.event section hr {
+    border: none;
+    height: 1px; /* Linien-Stärke */
+    /*border-top: 1px solid #BBB; /* Linien-Stärke und Linien-Farbe  */
+    width: 80%; /* Linien-Breite */ 
+    padding: 0 0 12px; /* Schatten-Höhe */
+    overflow: hidden;
+    display: block;
+}
+
+.event section hr:before {
+    content: '';
+    width: 90%; /* Schatten - Breite */
+    height: 20px;
+    box-shadow: 0 0 12px #333; /* Schatten Blur */
+    border-bottom-left-radius: 180px 10px;
+    border-bottom-right-radius: 180px 10px;
+    position: relative;
+    top: -20px;
+    left: 10%;
+    display: block;
+}
